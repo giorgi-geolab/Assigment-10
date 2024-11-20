@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-family: "Helvetica", Arial, sans-serif;
+}
+
+/* HEADER */
+
+header {
+  width: 100vw;
+  height: 84px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  background-color: white;
+}
+
+header > img {
+  width: 33px;
+  height: 42px;
+}
+
+i {
+  display: none !important;
+  font-size: 32px !important;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+i:hover {
+  color: rgb(128, 167, 225);
+  font-size: 38px !important;
+}
+
+li {
+  display: inline-block;
+}
+
+li > a {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 19.55px;
+  color: #636060;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 50px;
+}
+
+/* MAIN */
+
+main {
+  margin-top: 84px;
+  position: relative;
+}
+
+main > img {
+  width: 100vw;
+  height: 606px;
+  object-fit: cover;
+}
+
+main > h1 {
+  font-weight: 700;
+  font-size: 79px;
+  line-height: 90.84px;
+  color: #ffffff;
+  top: 238px;
+  left: calc(50% - 312.5px);
+  position: absolute;
+}
+
+main > h6 {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 21.85px;
+  color: #ffffff;
+  top: 360px;
+  left: calc(50% - 151.5px);
+  text-transform: uppercase;
+  position: absolute;
+}
+
+/* FOOTER */
+
+/* SECTION 1 */
+
+footer {
+  display: flex;
+  padding: 0 10px;
+  margin-top: 84px;
+  justify-content: center;
+}
+
+#only-texts-section {
+  margin-right: 83px;
+  height: 314.84px;
+}
+
+#only-texts-section > h6 {
+  height: 20px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 19.55px;
+  color: #636060;
+  text-transform: uppercase;
+}
+
+#only-texts-section > h1 {
+  height: 32px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32.2px;
+  text-transform: capitalize;
+  margin-top: 9px;
+}
+
+#only-texts-section > p {
+  width: 235px;
+  min-width: 235px;
+  height: 115px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  color: #636060;
+  margin-top: 32px;
+}
+
+/* SECTION 2 */
+
+#below-boxes {
+  margin-top: 56px;
+  margin-bottom: 140px;
+}
+
+.box {
+  display: inline-block;
+  margin-right: 33px;
+}
+
+.box > img {
+  width: 286px;
+  height: 195px;
+  object-fit: cover;
+}
+
+.box > h2 {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 21.85px;
+  text-transform: uppercase;
+  color: #343232;
+  margin-top: 23px;
+}
+
+.box > p {
+  width: 286px;
+  height: 63px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20.7px;
+  color: #636060;
+  margin-top: 9px;
+}
+
+/* AFTER LOWPXS */
+#after-lowPXS-div {
+  display: none;
+  text-align: center;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#after-lowPXS-txt {
+  color: red;
+  text-transform: uppercase;
+}
+
+#after-lowPXS-div > a {
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: 0.8s;
+}
+#after-lowPXS-div > a:hover {
+  font-size: 25px;
+  color: aquamarine;
+}
+
+/* MEDIAS */
+
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
+  .box {
+    display: block;
+    margin: 0;
+    margin-top: 56px;
+  }
+  .left-boxes-in-lowPXS {
+    display: inline-block;
+    margin-left: -314.84px;
+  }
+  .right-boxes-in-lowPXS {
+    display: inline-block;
+    margin-left: 26px;
+  }
+
+  #below-box-in-lowPXS {
+    margin-left: -314.84px;
+  }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 767px) {
+  ul {
+    display: none;
+  }
+  i {
+    display: flex !important;
+  }
+  main > h1 {
+    font-size: 50px;
+    left: calc(50% - 197.355px);
+  }
+  .box {
+    display: block;
+    margin: 0;
+    margin-top: 56px;
+  }
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #only-texts-section {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  header {
+    display: none;
+  }
+  main {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+  body {
+    background-color: black;
+  }
+  #after-lowPXS-div {
+    display: flex;
+  }
+}
