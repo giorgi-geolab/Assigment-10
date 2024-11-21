@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -14,9 +21,16 @@ header {
   position: fixed;
   top: 0;
   z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   background-color: white;
 }
@@ -29,6 +43,8 @@ header > img {
 i {
   display: none !important;
   font-size: 32px !important;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
   transition: 0.8s;
   cursor: pointer;
 }
@@ -62,6 +78,7 @@ main {
 main > img {
   width: 100vw;
   height: 606px;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -91,9 +108,13 @@ main > h6 {
 /* SECTION 1 */
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0 10px;
   margin-top: 84px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -146,6 +167,7 @@ footer {
 .box > img {
   width: 286px;
   height: 195px;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 
@@ -173,7 +195,12 @@ footer {
   display: none;
   text-align: center;
   height: 100vh;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 
@@ -186,6 +213,8 @@ footer {
   font-size: 20px;
   font-weight: 800;
   text-transform: uppercase;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
   transition: 0.8s;
 }
 #after-lowPXS-div > a:hover {
@@ -220,6 +249,8 @@ footer {
     display: none;
   }
   i {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
   }
   main > h1 {
@@ -232,8 +263,15 @@ footer {
     margin-top: 56px;
   }
   footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
   #only-texts-section {
@@ -255,6 +293,8 @@ footer {
     background-color: black;
   }
   #after-lowPXS-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
 }
